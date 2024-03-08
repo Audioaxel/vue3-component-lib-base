@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-defineProps({
-      msg: { type: String }
-    }
-)
+defineProps<{
+  msg: string;
+  option?: string;
+}>()
+
 
 const count = ref(0)
 </script>
@@ -15,6 +16,9 @@ const count = ref(0)
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
   </div>
+  <h5>
+    {{ option }}
+  </h5>
 </template>
 
 <style scoped>
