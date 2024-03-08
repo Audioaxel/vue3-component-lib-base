@@ -1,6 +1,6 @@
 {
   "name": "my-test-lib-audioaxel",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/index.umd.cjs",
