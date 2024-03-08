@@ -9,9 +9,9 @@ export default defineConfig({
     lib: {
       // src/indext.ts is where we have exported the component(s)
       entry: resolve(__dirname, "lib/index.ts"),
-      name: "my-test-lib-audioaxel",
+      name: "index",
       // the name of the output files when the build is run
-      fileName: "my-test-lib-audioaxel",
+      fileName: "index",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
