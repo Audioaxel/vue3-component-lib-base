@@ -1,0 +1,32 @@
+{
+  "name": "my-test-lib-audioaxel",
+  "version": "1.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/my-test-lib-audioaxel.umd.cjs",
+  "module": "./dist/my-test-lib-audioaxel.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-test-lib-audioaxel.js",
+      "require": "./dist/my-test-lib-audioaxel.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "types": "vue-tsc ",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.19"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4",
+    "vue-tsc": "^1.8.27"
+  }
+}
