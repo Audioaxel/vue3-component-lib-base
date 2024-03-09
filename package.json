@@ -1,5 +1,5 @@
 {
-  "name": "vue3-lib-audioaxel-base",
+  "name": "vue3-component-lib-base",
   "version": "0.0.1",
   "type": "module",
   "files": ["dist"],
